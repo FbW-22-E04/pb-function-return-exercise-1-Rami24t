@@ -2,6 +2,11 @@
 // 1
 function uppercase(str) {
   //write your code here 
+  words = str.split(' ');
+  words.forEach(element => {
+    element = element[0].toUpperCase()+element.slice(1);
+  });
+  return words.join(' ');
 }
 
 console.log(uppercase("the quick brown fox"));
